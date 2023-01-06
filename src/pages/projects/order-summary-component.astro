@@ -2,4 +2,55 @@
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout>Order summary component</Layout>
+<Layout
+  title="Frontend Mentor | Order summary card"
+  class="bg-d6e2f0 flex items-center justify-center min-h-screen"
+  attribution={false}
+>
+  <!-- fix attribution later by adding position -->
+  <section
+    class="font-redhatdisplay font-medium bg-white w-96 rounded-lg gap-4 drop-shadow-md shadow-3829e0"
+  >
+    <img
+      alt="illustration"
+      src="./order-summary-component/illustration-hero.svg"
+      class="rounded-t-lg"
+    />
+    <div class="p-12 flex flex-col gap-8">
+      <div class="flex flex-col gap-4">
+        <h1 class="text-2xl text-center font-black text-1f2f56">
+          Order Summary
+        </h1>
+
+        <p class="text-center text-sm">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+      </div>
+
+      <div class="flex p-4 bg-f5f7ff rounded-lg gap-4">
+        <img alt="music icon" src="./order-summary-component/icon-music.svg" />
+        <div class="grow flex justify-between items-center">
+          <div class="text-sm">
+            <p class="font-bold text-1f2f56">Annual Plan</p>
+            <p class="text-sm">$59.99/year</p>
+          </div>
+          <a class="text-3829e0 underline hover:no-underline">Change</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <a
+          class="rounded-xl bg-3829e0 p-2 text-white text-center text-sm shadow-md shadow-3829e0"
+        >
+          Proceed to Payment</a
+        >
+        <a class="text-sm text-center">Cancel Order</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+</style>
